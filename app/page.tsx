@@ -1,13 +1,15 @@
-import Image from "next/image";
+// /app/inter-milan/page.tsx
 
-export default function InterMilanAwayJerseyPage() {
+import Image from 'next/image';
+
+export default function InterMilanPage() {
   return (
     <main className="flex flex-col items-center justify-start min-h-screen bg-white text-gray-900 p-4">
       <h1 className="text-3xl font-bold mb-4 text-center">
         Inter Milan 24/25 어센틱 어웨이 유니폼
       </h1>
 
-      <div className="relative w-[300px] h-[300px] mb-4">
+      <div className="relative w-full max-w-md h-96 mb-4">
         <Image
           src="https://foot-store.de/media/92/1f/63/1713358207/fn8772-123_1.webp"
           alt="Inter Milan 24/25 Away Jersey"
@@ -24,7 +26,9 @@ export default function InterMilanAwayJerseyPage() {
         <p className="mt-2 text-lg font-semibold">기술:</p>
         <p>Nike Dri-FIT ADV 기술 적용 / 슬림 핏 / 메시 구조</p>
         <p className="mt-2 text-lg font-semibold">가격:</p>
-        <p className="text-red-600 font-bold text-xl">€126.32 (22% 할인 적용)</p>
+        <p className="text-red-600 font-bold text-xl">
+          €126.32 (22% 할인 적용)
+        </p>
       </div>
 
       <a
